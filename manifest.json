@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Keystone Shopify Link Embed",
+  "version": "1.0.0",
+  "description": "Adds a Shopify Admin button to Keystone Crystals product pages.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://keystonecrystals.com/products/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
